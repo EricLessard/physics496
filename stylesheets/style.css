@@ -1,13 +1,13 @@
-body {background-color:#fff;}
+body {background-color:#484043; color:white;}
 #container
 {
-	background:#fff;
+	background:#484043;
 	position:absolute;
 }
 
 #header_container 
 { 
-	background:#fff;
+	background:#484043;
 	border:0px solid #666; 
 	height:60px; 
 	left:0;
@@ -29,7 +29,7 @@ z-index:3;
 #content_container
 {
 	width:100%;
-	background:#fff;
+	background:#484043;
 	z-index:2;
 	top:60px;
 	position:absolute;
@@ -50,7 +50,7 @@ margin-left:50vh;
 
 #content h2
 {
-	color:#000;
+	color:white;
 	font-size: 160%;
 	margin: 0 0 .5em;
 }
@@ -67,7 +67,7 @@ margin-left:50vh;
   width: auto;
 }
 #cssmenu ul {
-  background: #333333;
+  background: #6E6568;
   height: 35px;
   list-style: none;
   margin: 0;
@@ -77,7 +77,7 @@ margin-left:50vh;
   padding: 0px;
 }
 #cssmenu li a {
-  background: #333333 url('seperator.gif') bottom right no-repeat;
+  background: #6E6568 url('seperator.gif') bottom right no-repeat;
   display: block;
   font-weight: normal;
   line-height: 35px;
@@ -94,12 +94,12 @@ margin-left:50vh;
 }
 #cssmenu li > a:hover,
 #cssmenu ul li:hover > a {
-  background: #2580a2 url('hover.png') bottom center no-repeat;
+  background: #D23641 url('hover.png') bottom center no-repeat;
   color: #FFFFFF;
   text-decoration: none;
 }
 #cssmenu li ul {
-  background: #333333;
+  background: #6E6568;
   display: none;
   height: auto;
   padding: 0px;
@@ -137,7 +137,7 @@ margin-left:50vh;
 }
 #cssmenu li ul a:hover,
 #cssmenu li ul li:hover > a {
-  background: #2580a2 url('hover_sub.png') center left no-repeat;
+  background: #D23641 url('hover_sub.png') center left no-repeat;
   border: 0px;
   color: #ffffff;
   text-decoration: none;
