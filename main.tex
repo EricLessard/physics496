@@ -1,0 +1,169 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\title{Special Relativity}
+
+\author{You}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+%Section: Website Layout
+\section{Website Layout}
+Each subsection here to be a different tab up top. Note: Can Combine Lorentz Transformations and Consequences
+\subsection{Introduction}
+Inludes section on Introduction + Gallilean Transformations
+\subsection{Einstein}
+Contains Einstein section + some other history
+\subsection{Lorentz Transformations}
+Includes section on Lorentz Transformations
+\subsection{Consequences}
+Includes Time Dilation and Length Contraction
+\subsection{Quiz}
+Includes Quiz
+\subsection{About}
+Includes author bios and citations
+
+%Section: Introduction
+\section{Introduction}
+What is Special Relativity? Special Relativity is a theory which connects space and time. It has been experimentally verified (Insert citation) and is the current theory connecting the two.\\
+
+To begin understanding Special Relativity, we must first declare two very important definitions. These definitions will be crucial to our understanding of Special Relativity.
+\subsection{Event}
+An event is something that happens independent of the reference frame we might use to describe it.
+\subsection{Observer}
+An observer is an infinite set of clocks, on at each point in space, at rest and synchronized with respect to eachother.\\
+The space-time coordinates (x,y,z,t) are recorded by a clock at the location (x,y,z) of the event at the time (t) it occurs.
+
+%Section: Gallilean Tranfsformations
+\section{Gallilean Transformations}
+We have two reference frames, S and S$^\prime$ with S$^\prime$ moving relative to S with constant velocity $v$.\\
+
+TODO:INSERT PICTURE OF REFERENCE FRAMES  %http://en.wikipedia.org/wiki/File:Frames_of_reference_in_relative_motion.svg)
+
+\begin{center}
+
+$x^\prime = x-vt$ \\
+$y^\prime = y$ \\
+$z^\prime = z$\\
+$t^\prime = t$\\
+
+\end{center}
+Why do Gallilean Transformations not work? Lets consider an example:
+
+\begin{center}
+TODO: INSERT IMAGE OF TRAIN
+\end{center}
+
+From this, we can see that the light reaching the front and the light reaching the back are not simulatanious.
+
+%Section: Einstein
+\section{Einstein}
+In Albert Einstein's famous paper "On the Electrodynamics of Moving Bodies", written in 1905 he proposed two postulates:\\
+1. That the laws of physics are invariant (identical) in all inertial systems (non-accelerating frames).\\
+2. The speed of light in a vacuum is the same for all observers, regardless of motions.\\
+
+
+
+
+%Section: Lorentz Transformations
+\section{Lorentz Transformations}
+Similar to our Gallielean Transformation, let us consider two reference frames, S and S$^\prime$ with S$^\prime$ moving relative to S with constant velocity $v$. \\
+Let $t=0$ and $t^\prime =0$ to be when the origins of S and $S^\prime$ coincide.
+Using the fact that the transformation between S and $S^\prime$ must be linear we see:
+\begin{center}
+
+$ x^\prime = a_{11}x + a_{12}y + a_{13}z + a_{14}t$\\
+$ y^\prime = a_{21}x + a_{22}y + a_{23}z + a_{24}t$\\
+$ z^\prime = a_{31}x + a_{32}y + a_{33}z + a_{34}t$\\
+$ t^\prime = a_{41}x + a_{42}y + a_{43}z + a_{44}t$\\
+\end{center}
+Why must they be linear? Let's consider:
+
+Suppose $x^\prime = ax^2$\\
+Then $x_2^\prime - x_1^\prime = ax_2^2 - ax_1^2$\\
+$x_2^\prime - x_1^\prime = a(x_2^2 - x_1^2)$\\
+Consider $x_2 = 2$ and $x_1 = 1$\\
+$x_2^\prime - x_1^\prime = a(4 - 1)$\\
+$x_2^\prime - x_1^\prime = a(3)$\\
+Now consider $x_2 = 5$ and $x_1 = 4$\\
+$x_2^\prime - x_1^\prime = a(25 - 16)$\\
+$x_2^\prime - x_1^\prime = a(9)$\\
+
+From this, we can see that depending on where we choose our origin, we get a different result. Clearly this is incorrect.
+
+Let's look again at the postulate of the constancy of the speed of light. Imagine that at a time $t=0$, a spherical light beam leaves a point that coincides to both the origin in $S$ and the origin in $S^\prime$.\\
+We know that the light will travel following the following formulas:
+\begin{center}
+$x^2 + y^2 + z^2 = (ct)^2$ in our S frame\\
+$(x^\prime)^2 + (y^\prime)^2 + (z^\prime)^2 = (ct^\prime)^2$ in our $S^\prime$ frame.
+\end{center}
+If we take our equations for a linear transformation and plug them into these two equations we receive the following:
+\begin{center}
+$x^\prime = \frac{x - vt}{\sqrt{1-\frac{v}{c}^2}}$\\
+$y^\prime = y$\\
+$z^\prime = z$\\
+$t^\prime = \frac{t - \frac{v}{c^2}x}{\sqrt{1-\frac{v}{c}^2}}$\\
+and\\
+$x= \frac{x^\prime - vt^\prime}{\sqrt{1-\frac{v}{c}^2}}$\\
+$y= y$\\
+$z= z$\\
+$t= \frac{t^\prime - \frac{v}{c^2}x}{\sqrt{1-\frac{v}{c}^2}}$\\
+\end{center}
+These here are the famous Lorentz Transformations.\\
+You'll notice that with $v<<c$ that $\sqrt{1-\frac{v}{c}^2} \simeq 1$ as $\frac{v}{c} -> 0$ This reduces our Lorentz Transformations to our classic Gallilean Transformation for speeds much less than the speed of light. Which would be everything we encounter on a day to day basis.
+
+%Section: Length Contraction
+\section{Length Contraction}
+
+Let's consider a rod at rest in the S frame.\\
+S measures endpoints at $x_1$ and $x_2$\\
+$S^\prime$ measures end points at $x^\prime_1$ and $x^\prime_2$\\
+To measure these lengths, we must ensure the measurements were performed at the same time, a time $t=t_0$\\
+\begin{center}
+$x^\prime_2 - x^\prime_1 = \frac{x_2 - vt_0}{\sqrt{1-(\frac{v}{c})^2}} - \frac{x_1 - vt_0}{\sqrt{1-(\frac{v}{c})^2}}$\\
+$x^\prime_2 - x^\prime_1 = \frac{x_2 - x_1}{\sqrt{1-(\frac{v}{c})^2}}$\\
+$(x_2 - x_1) = (x^\prime_2 - x^\prime_1) (\sqrt{1-(\frac{v}{c})^2})$\\
+$\Delta x = (\Delta x^\prime) (\sqrt{1-(\frac{v}{c})^2})$
+\end{center}
+
+When a body is moving at velocity $v$ relative to a stationary observer its length measured is contracted in the direction of the motion by a factor of $(\sqrt{1-(\frac{v}{c})^2})$, that is a body's length is measured to be greatest when it is at rest relative to the observer. \\
+Note on Length contraction, the length is only contracted in the direction of the relative motion.
+
+%Section: Time Dilation
+\section{Time Dilation}
+We have a clock at rest at a position $x^\prime_0$ which is in the $S^\prime$ frame. In our $S^\prime$ frame measures times $t^\prime_2$ and $t^\prime_1$ and in our S frame measures times $t_2$ and $t_1$.\\
+\begin{center}
+$t_2 - t_1 = \frac{t^\prime_2 - \frac{v}{c^2}x_0}{\sqrt{1-\frac{v}{c}^2}} - \frac{t^\prime_1 - \frac{v}{c^2}x_0}{\sqrt{1-\frac{v}{c}^2}}$\\
+$t_2 - t_1 = \frac{t^\prime_2 - t^\prime_1}{\sqrt{1-\frac{v}{c}^2}}$\\
+$\Delta t = \frac{\Delta t^\prime}{\sqrt{1-\frac{v}{c}^2}}$\\
+\end{center}
+In other words, a clock goes fastest when it is at rest. When the clock moves with velocity $v$ it appears to have slowed down by a factor $(\sqrt{1-(\frac{v}{c})^2})$.
+
+%Section: Quiz
+\section{Quiz}
+In this section we could have 3-4 questions relating to Special Relativity for the students to test their knowledge. It would be a separate page with (hopefully) interactive feedback.
+
+%Section: About
+\section{About}
+Eric Lessard is - INSERT\\
+Dragan Lukic is -INSERT\\
+Anmol Dhar is -INSERT\\
+Aaron Bondy is -INSERT\\
+
+%Section: References
+\section{References}
+1. E.H Kim, Lecture Notes on Mechanics (64-250) Recorded 2014\\
+2. Einstein Albert (1905) "Zur Elektrodynamik bewegter Korper". (English Translation by George Barker Jeffery and Wilfrid Perrett (1923).\\
+3, Reference frame picture from Wikipedia user Krea licensed under Creative Common License\\
+% http://en.wikipedia.org/wiki/File:Frames_of_reference_in_relative_motion.svg
+4. Train example picture from some .edu will find later\\
+5.
+
+\end{document}
