@@ -26,47 +26,11 @@ z-index:3;
 
 #header h1 { margin: 0; }
 
-/*
-#navigation
-{
-	float: left;
-	width: 100%; 
-	background:#333;
-	text-align:center;
-	max-width:960;
-
-}
-
-#navigation ul
-{
-	margin: 0;
-	padding: 0;
-}
-
-#navigation ul li
-{
-	list-style-type: none;
-	display: inline-block;
-}
-
-#navigation li a
-{
-	display: block;
-	float: left;
-	padding: 10px 10px;
-	color:#fff;
-	text-decoration: none;
-	border-right: 1px solid#fff;
-	border-left: 1px solid#fff;
-}
-
-#navigation li a:hover { background:#383; }
-
 #content_container
 {
 	width:100%;
 	background:#fff;
-z-index:2;
+	z-index:2;
 	top:60px;
 	position:absolute;
 	
@@ -91,64 +55,103 @@ margin-left:50vh;
 	margin: 0 0 .5em;
 }
 
+/***********************MENU***************************/
+#cssmenu {
+  border: none;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  font: 67.5% 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  width: auto;
+}
+#cssmenu ul {
+  background: #333333;
+  height: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu li {
+  padding: 0px;
+}
+#cssmenu li a {
+  background: #333333 url('seperator.gif') bottom right no-repeat;
+  display: block;
+  font-weight: normal;
+  line-height: 35px;
+  margin: 0px;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+#cssmenu > ul > li > a {
+  color: #cccccc;
+}
+#cssmenu ul ul a {
+  color: #cccccc;
+}
+#cssmenu li > a:hover,
+#cssmenu ul li:hover > a {
+  background: #2580a2 url('hover.png') bottom center no-repeat;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#cssmenu li ul {
+  background: #333333;
+  display: none;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  width: 225px;
+  z-index: 200;
+  /*top:1em;
+	/*left:0;*/
 
-/* Structure
-------------------------------------------*/
-#menu,
-#menu ul {
-	list-style: none;
 }
-#menu {
-	float: left;
+#cssmenu li:hover ul {
+  display: block;
 }
-#menu > li {
-	float: left;
+#cssmenu li li {
+  background: url('sub_sep.gif') bottom left no-repeat;
+  display: block;
+  float: none;
+  margin: 0px;
+  padding: 0px;
+  width: 225px;
 }
-#menu li a {
-	display: block;
-	height: 2em;
-	line-height: 2em;
-	padding: 0 1.5em;
-	text-decoration: none;
+#cssmenu li:hover li a {
+  background: none;
 }
-#menu ul {
-	position: absolute;
-	display: none;
-	z-index: 999;
+#cssmenu li ul a {
+  display: block;
+  height: 35px;
+  font-size: 12px;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px 10px 0px 15px;
+  text-align: left;
 }
-#menu ul li a {
-	width: 80px;
+#cssmenu li ul a:hover,
+#cssmenu li ul li:hover > a {
+  background: #2580a2 url('hover_sub.png') center left no-repeat;
+  border: 0px;
+  color: #ffffff;
+  text-decoration: none;
 }
-#menu li:hover ul.noJS {
-	display: block; 
+#cssmenu p {
+  clear: left;
 }
-
-
-/* Main menu
-------------------------------------------*/
-#menu {
-	font-family: Arial;
-	font-size: 12px;
-	background: #2f8be8;
+#cssmenu > ul > li {
+  display:inline-block;
+  margin-left: 15px;       /* This is when the drop down box appears */
+  position: relative;
 }
-#menu > li > a {
-	color: #fff;
-	font-weight: bold;
-}
-#menu > li:hover > a {
-	background: #f09d28;
-	color: #000;
-}
-
-
-/* Submenu
-------------------------------------------*/
-#menu ul {
-	background: #f09d28;
-}
-#menu ul li a {
-	color: #000;
-}
-#menu ul li:hover a {
-	background: #ffc97c;
-}
+ #cssmenu > ul {
+  text-align:center;
+ }
+ 
+ /*******************************************/
