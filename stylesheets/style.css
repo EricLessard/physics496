@@ -26,6 +26,7 @@ z-index:3;
 
 #header h1 { margin: 0; }
 
+/*
 #navigation
 {
 	float: left;
@@ -60,7 +61,7 @@ z-index:3;
 }
 
 #navigation li a:hover { background:#383; }
-
+*/
 #content_container
 {
 	width:100%;
@@ -88,4 +89,66 @@ margin-left:50vh;
 	color:#000;
 	font-size: 160%;
 	margin: 0 0 .5em;
+}
+
+
+/* Structure
+------------------------------------------*/
+#menu,
+#menu ul {
+	list-style: none;
+}
+#menu {
+	float: left;
+}
+#menu > li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	height: 2em;
+	line-height: 2em;
+	padding: 0 1.5em;
+	text-decoration: none;
+}
+#menu ul {
+	position: absolute;
+	display: none;
+	z-index: 999;
+}
+#menu ul li a {
+	width: 80px;
+}
+#menu li:hover ul.noJS {
+	display: block; 
+}
+
+
+/* Main menu
+------------------------------------------*/
+#menu {
+	font-family: Arial;
+	font-size: 12px;
+	background: #2f8be8;
+}
+#menu > li > a {
+	color: #fff;
+	font-weight: bold;
+}
+#menu > li:hover > a {
+	background: #f09d28;
+	color: #000;
+}
+
+
+/* Submenu
+------------------------------------------*/
+#menu ul {
+	background: #f09d28;
+}
+#menu ul li a {
+	color: #000;
+}
+#menu ul li:hover a {
+	background: #ffc97c;
 }
