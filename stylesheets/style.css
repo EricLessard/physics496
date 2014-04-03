@@ -113,12 +113,10 @@ margin-left:50vh;
 }
 #menu li a {
 	display: block;
-	float: left;
-	padding: 10px 10px;
-	color:#fff;
+	height: 2em;
+	line-height: 2em;
+	padding: 0 1.5em;
 	text-decoration: none;
-	border-right: 1px solid#fff;
-	border-left: 1px solid#fff;
 }
 #menu ul {
 	position: absolute;
